@@ -27,12 +27,12 @@ export default function About() {
     ]
 
   return (
-    <section className='p-[70px]'>
+    <section className='md:p-[70px] px-[20px] py-[70px]'>
     <div>
-      <h1 className='text-[3rem] font-[400]'>Why choose Easybank?</h1>
-      <p className='w-[40%] font-[400] text-[16px]'>We leaverage Open Banking to turn your bank account into your financial hub. Control your finances like never before.</p>
+      <h1 className='lg:text-[3rem] md:text-[48px] text-[30px] font-[400]'>Why choose Easybank?</h1>
+      <p className='md:w-[40%] font-[400] text-[16px]'>We leaverage Open Banking to turn your bank account into your financial hub. Control your finances like never before.</p>
     </div>
-    <div className='flex justify-between gap-[5rem]'>
+    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 sm:gap-[5rem] gap-6'>
         {
             aboutData.map((data, index) =>{
                 return <AboutCard data={data}/>
